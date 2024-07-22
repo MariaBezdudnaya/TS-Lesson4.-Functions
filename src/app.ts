@@ -40,20 +40,20 @@ function calculate(a: number | (number | string)[], b?: number, operator?: strin
       switch (operator) {
         case '+':
           result += num;
-          break;
+    
         case '-':
           result -= num;
-          break;
+    
         case '*':
           result *= num;
-          break;
+        
         case '/':
           if (num === 0) {
             console.log('Division by zero is not allowed');
             return NaN;
           } 
           result /= num;
-          break;
+        
         default:
           throw new Error ('Invalid operator');
       }
